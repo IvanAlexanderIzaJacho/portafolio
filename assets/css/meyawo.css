@@ -12232,3 +12232,63 @@ pre .code {
 .section-lg {
   padding: 100px 0 !important;
 }
+/*portafolio*/
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 1000px;
+  width: 100%;
+  transition: transform 0.3s;
+}
+
+
+.project-card:hover {
+  transform: scale(1.02);
+}
+
+.project-description {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.project-description h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.project-description p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.tech {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.project-image img {
+  max-width: 200px;
+  border-radius: 8px;
+}

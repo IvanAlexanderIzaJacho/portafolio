@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Start your development with Meyawo landing page.">
     <meta name="author" content="Devcrud">
-    <title>Meyawo Landing page | Free Bootstrap 4.3.x landing page</title>
+    <title>Portafolio</title>
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Meyawo main styles -->
     <link rel="stylesheet" href="assets/css/meyawo.css">
+    <!-- AOS Animate on Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <!-- Lightbox -->
+    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet">
+    
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
@@ -47,11 +52,9 @@
         <div class="overlay"></div>
         <div class="header-content container">
             <h1 class="header-title">
-                
                 <span class="down">Alexander Iza</span>
             </h1>
             <p class="header-subtitle">Creamos portales a mundos nuevos con HTML y CSS</p>
-       
         </div>
     </header><!-- end of page header -->
 
@@ -60,7 +63,7 @@
         <!-- container -->
         <div class="container text-center">
             <!-- about wrapper -->
-            <div class="about">
+            <div class="about" data-aos="fade-up">
                 <div class="about-img-holder">
                     <img src="assets/imgs/alex.png" class="about-img"
                         alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
@@ -74,9 +77,20 @@
                     </p>                    
                 </div>
             </div><!-- end of about wrapper -->
+            <br><br><br>
+            <h6 class="section-title mb-6">Tecnologías de Desarrollo Web</h6>
+            <div class="logo-grid">
+                <div class="logo1" data-aos="zoom-in"><img src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg" alt="HTML5"></div>
+                <div class="logo1" data-aos="zoom-in"><img src="https://nodejs.org/static/images/logo.svg" alt="Node.js"></div>
+                <div class="logo1" data-aos="zoom-in"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript"></div>
+                <div class="logo1" data-aos="zoom-in"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3"></div>
+                <div class="logo1" data-aos="zoom-in"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" alt="Git"></div>
+                <div class="logo1" data-aos="zoom-in"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/MySQL_textlogo.svg" alt="MySQL"></div>
+                <div class="logo1" data-aos="zoom-in"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" alt="Bootstrap"></div>
+                <div class="logo1" data-aos="zoom-in"><img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg" alt="PostgreSQL"></div>
+            </div>
         </div><!-- end of container -->
     </section> <!-- end of about section -->
-
 
     <!-- portfolio section -->
     <section class="section" id="portfolio">
@@ -84,8 +98,8 @@
             <h6 class="section-title mb-6">Portafolio</h6>
             
             <!-- row -->
-            <a href="https://gitlab.com/ivan.iza7078/campeonato-nacional" target="_blank" class="project-link">
-                <div class="project-card">
+            <a href="assets/imgs/campeonato-nacional.jpg"  target="_blank" class="project-link">
+                <div class="project-card" >
                     <div class="project-description">
                         <h2>Proyecto Liga barrial</h2>
                         <p>Desarrolle de un proyecto de una liga barrial realizado en DJANGO conectada a un gestor de base de datos MYSQL.</p>
@@ -104,6 +118,7 @@
                     </div>
                 </div>
             </a>
+        </div>
     </section> <!-- end of portfolio section -->
     <section class="section" id="portfolio">
         <div class="container text-center">
@@ -176,22 +191,17 @@
                         </div>
                     </div>
                     <div class="project-image">
-                        <img src="assets/imgs/sac.png" alt="Proyecto Unidad Educativa">
+                        <img src="assets/imgs/sac.png   " alt="Proyecto Unidad Educativa">
                     </div>
                 </div>
             </a>
         </div>       
     </section> <!-- end of portfolio section -->
 
-    
 
-  
-
-    
     <!-- contact section -->
     <section class="section" id="contact">
         <div class="container text-center">
-            
             <h6 class="section-title mb-5">Contactame</h6>
             <!-- contact form -->
             <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
@@ -203,8 +213,7 @@
                         <input type="email" class="form-control" placeholder="Enter Email" requried>
                     </div>
                     <div class="form-group col-sm-12">
-                        <textarea name="comment" id="comment" rows="6" class="form-control"
-                            placeholder="Write Something"></textarea>
+                        <textarea name="comment" id="comment" rows="6" class="form-control" placeholder="Write Something"></textarea>
                     </div>
                     <div class="form-group col-sm-12 mt-3">
                         <input type="submit" value="Enviar" class="btn btn-outline-primary rounded">
@@ -218,8 +227,7 @@
     <div class="container">
         <footer class="footer">
             <p class="mb-0">Copyright
-                <script>document.write(new Date().getFullYear())</script> &copy; <a
-                    href="https://alexanderiza.now.site/">Alexander</a> Distribution 
+                <script>document.write(new Date().getFullYear())</script> &copy; <a href="https://alexanderiza.now.site/">Alexander</a> Distribution 
             </p>
             <div class="social-links text-right m-auto ml-sm-auto">
                 <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
@@ -235,12 +243,17 @@
     <!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
     <!-- bootstrap 3 affix -->
     <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-
     <!-- Meyawo js -->
     <script src="assets/js/meyawo.js"></script>
+    <!-- AOS Animate on Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Lightbox -->
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
 
 </body>
 
